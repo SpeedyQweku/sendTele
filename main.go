@@ -117,7 +117,7 @@ func main() {
 			msgs := fmt.Sprintf("[INFO] %s: %s", currentTime, strings.ReplaceAll(mgs, "{nl}", "\n"))
 			sendMessage(btoken, int64(chatID), msgs)
 		} else if mgs != "" {
-			msgs := fmt.Sprintf("[INFO] %s - %s now", currentTime, mgs)
+			msgs := fmt.Sprintf("[INFO] %s - %s", currentTime, mgs)
 			sendMessage(btoken, int64(chatID), msgs)
 		}
 	} else {
